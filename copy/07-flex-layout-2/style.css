@@ -13,8 +13,17 @@ body {
   background: darkmagenta;
   color: white;
   flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+  font-weight: 900;
 }
 
+.header-text {
+  font-size: 32px;      /* VAŽNO! bolje je koristiti font-size nego font */
+  font-weight: 900;
+}
 .mid {
   display: flex;
   justify-content: space-between;
@@ -23,20 +32,42 @@ body {
                                             elementa je prazno  
                                             */
 }
-
+                                    /* Zadatak je sluzbeno gotov, no imao sam nesto drugaciji padding/margin nego u rjesenju. Npr., nisam koristio margin na .card,
+                                    ali sam zato koristio veci padding na .card elementu. */
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   flex-shrink: 0;
-  padding-right: 32px;
+  padding: 16px;
+  
  }
+
+ul {
+  list-style-type: none;
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 24px;
+}
 
 .card {
   border: 1px solid #eee;
@@ -44,18 +75,16 @@ body {
   border-radius: 4px;
   max-width: 300px;
   max-height: 300px;
-  padding: 16px;        /*                      OVDJE NESTO NE VALJA
-  min-width: 300px;
-  text-overflow: ellipsis; */
-  
+  padding: 16px;
+  margin: 16px;           /* DODATAK iz F12 rjesenja   */   
 }
 
 .cards {
   display: flex;
   /* justify-content: space-between;  */
-  padding: 48px;
+  padding: 32px;                                  /* PROMJENA naspram rjesenju, ja sam koristio 48px */
   /* padding-right: 100px;  */
-  gap: 32px;
+  /* gap:16px;                               NO GAP, imaš margine među elementima */
   flex-wrap:wrap;
   flex-shrink: 1;
     
