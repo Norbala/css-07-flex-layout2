@@ -35,7 +35,7 @@ body {
   width: 300px;
   background: royalblue;
   flex-shrink: 0;
-  padding-right: 30px;
+  padding-right: 32px;
  }
 
 .card {
@@ -53,11 +53,11 @@ body {
 .cards {
   display: flex;
   /* justify-content: space-between;  */
-  padding: 40px;
-  padding-right: 100px;
-  gap: 30px;
+  padding: 48px;
+  /* padding-right: 100px;  */
+  gap: 32px;
   flex-wrap:wrap;
   flex-shrink: 1;
-  
+    
 }  
 
