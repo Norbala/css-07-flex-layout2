@@ -4,7 +4,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between;     /* nepotrebno, mislim da je ovo sjebalo poredak elemenata (pa sam morao rjesavati s flex-grow:1 za mid dio) */
   
 }
 
@@ -19,7 +19,7 @@ body {
   padding-left: 16px;
   font-weight: 900;
 }
-
+                        /* ovaj container je izgleda nepotreban, no dobro... dobro sam ucinio */
 .header-text {
   font-size: 32px;      /* VAŽNO! bolje je koristiti font-size nego font */
   font-weight: 900;
@@ -54,7 +54,7 @@ body {
 
 ul {
   list-style-type: none;
-  text-align: start;
+  text-align: start;          /* nepotrebno */
   margin: 0;
   padding: 0;
 }
@@ -86,7 +86,7 @@ a {
   /* padding-right: 100px;  */
   /* gap:16px;                               NO GAP, imaš margine među elementima */
   flex-wrap:wrap;
-  flex-shrink: 1;
+  flex-shrink: 1;         /* mislim da je nepotreban */
     
 }  
 
